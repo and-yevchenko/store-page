@@ -1,11 +1,16 @@
 import { Logo } from '../Logo/Logo'
 import './Header.css'
+import { Nav } from '../Nav/Nav'
+
 
 export const Header = () => {
 
     return (
         <header className='header'>
-            <Logo />
+            <div className='header-container'>
+                <Logo />
+                <Nav />
+            </div>
         </header>
     )
 }
