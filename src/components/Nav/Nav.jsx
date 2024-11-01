@@ -8,6 +8,7 @@ export const Nav = () => {
             <a href="#" className='nav-link'>Сlothes</a>
             <a href="#" className='nav-link'>Equipment</a>
             <a href="#" className='nav-link'>Nutrition</a>
+            <a href="#" className='nav-link'>About</a>
         </nav>
     )
 }
