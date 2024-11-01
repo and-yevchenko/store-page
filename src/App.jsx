@@ -10,7 +10,9 @@ function App() {
     <Theme style={{"backgroundColor": "transparent"}}>
       <div className='app'>
         <Header />
-        
+        <main className='main'>
+          
+        </main>
       </div>
     </Theme>
   )
