@@ -1,8 +1,8 @@
 [
     {
         "id": "25100C",
-        "name-product": "UCL Men's home jersey 24/25 FC Barcelona",
-        "info-product": "FC Barcelona home shirt from the 24/25 season",
+        "nameProduct": "UCL Men's home jersey 24/25 FC Barcelona",
+        "infoProduct": "FC Barcelona home shirt from the 24/25 season",
         "choosePrice": 25,
         "price": 125,
         "size": {
