@@ -5,35 +5,3 @@
     padding: 0 2rem;
 }
 
-.main {
-    width: 100%;
-    height: 100vh;
-    padding: 7rem 0 2rem 0;
-    position: relative;
-    display: flex;
-    justify-content: start;
-    gap: 3rem;
-    &::before, &::after {
-        content: '';
-        display: block;
-        z-index: 5;
-        width: 100%;
-        height: 3px;
-        background-color: var(--color-main);
-        position: absolute;
-    }
-    &::before {
-        top: 7rem;
-        left: 0;
-    }
-    &::after {
-        bottom: 2rem;
-        left: 0;
-    }
-}
-
-.slider {
-    /* width: 100%; */
-    /* height: 100%; */
-    padding: 1rem 0;
-}
