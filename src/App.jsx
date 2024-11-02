@@ -11,7 +11,9 @@ function App() {
     <Theme style={{"backgroundColor": "transparent"}} >
       <div className='app'>
         <Header />
-        <ProductCard />
+        <main className='main'>
+          <ProductCard />
+        </main>
       </div>
     </Theme>
   )
