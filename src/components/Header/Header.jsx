@@ -1,6 +1,7 @@
 import { Logo } from '../Logo/Logo'
 import './Header.css'
 import { Nav } from '../Nav/Nav'
+import { Cart } from '../Cart/Cart'
 
 
 export const Header = () => {
@@ -10,6 +11,7 @@ export const Header = () => {
             <div className='header-container'>
                 <Logo />
                 <Nav />
+                <Cart />
             </div>
         </header>
     )

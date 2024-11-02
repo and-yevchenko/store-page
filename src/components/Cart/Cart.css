@@ -1,0 +1,33 @@
+.cart {
+    padding: 0.7rem;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease-out;
+    &:hover {
+        transition: all 0.3s ease-out;
+        background-color: var(--color-main);
+        .cart-icon {
+            color: var(--color-background);
+        }
+    }
+}
+
+.cart-icon {
+    color: var(--color-main);
+}
+
+.cart-full {
+    font-size: 0.6rem;
+    line-height: 1;
+    color: var(--color-background);
+    background-color: #a52a2a;
+    padding: 0.1rem 0.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+}
