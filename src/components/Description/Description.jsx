@@ -5,6 +5,7 @@ import { ProductName } from '../Product/ProductName'
 import { ProductSize } from '../Product/ProductSize'
 import { ProductChoose } from '../Product/ProductChoose'
 import { ProductTabs } from '../Product/ProductTabs'
+import { ProductPrice } from '../Product/ProductPrice'
 
 export const Description = ({data}) => {
 
@@ -14,15 +15,8 @@ export const Description = ({data}) => {
             <ProductSize data={data}/>
             <ProductChoose data={data}/>
             <ProductTabs data={data}/>
-           
-
-            
-
             <Flex gap="1" gapX='9'>
-                <Box>
-                    <Text as='div' size="2" weight='medium' color='ruby'>Selling price:</Text>
-                    <Text as='div' size="6" style={{color: 'var(--color-main)'}}>USD <Strong>150$</Strong></Text>
-                </Box>
+                <ProductPrice data={data} />
                 <Flex align="center" gap='4'>
                     <IconButton variant="ghost" radius='full' color='gray'>
                         <Heart />
