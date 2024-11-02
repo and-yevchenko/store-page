@@ -5,7 +5,8 @@
     display: flex;
     justify-content: start;
     gap: 3rem;
-    &::before, &::after {
+    &::before,
+    &::after {
         content: '';
         display: block;
         z-index: 5;
