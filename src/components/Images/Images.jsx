@@ -5,7 +5,7 @@ export const Images = () => {
 
     return (
             <img
-                src="src\assets\Images\25100C_1.webp"
+                src="src\assets\images\25100C_1.webp"
                 alt="Man in a football kit"
                 style={{
                     objectFit: "cover",

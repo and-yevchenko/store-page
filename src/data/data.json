@@ -1,5 +1,71 @@
 [
     {
-        
+        "id": "25100C",
+        "name-product": "UCL Men's home jersey 24/25 FC Barcelona",
+        "info-product": "FC Barcelona home shirt from the 24/25 season",
+        "choosePrice": 25,
+        "price": 125,
+        "size": {
+            "XS": true,
+            "S": true,
+            "M": false,
+            "L": false,
+            "XL": true,
+            "2XL": true,
+            "3XL": true
+        },
+        "players": [
+            "Lamine Yamal 19",
+            "Lewandowski 9",
+            "Raphinha 11",
+            "Pedri 8",
+            "Gavi 6",
+            "Fermín 16",
+            "Cubarsí 2",
+            "Eric 24",
+            "Olmo 20",
+            "I. Martinez 5",
+            "Balde 3",
+            "Kounde 23",
+            "Ansu Fati 10",
+            "F. De Jong 21",
+            "Christensen 15",
+            "Ferran 7",
+            "R. Araujo 4",
+            "Pablo Torre 14",
+            "M. Casadó 17",
+            "Pau Víctor 18"
+        ],
+        "info": [
+            {
+                "title": "Description",
+                "text": [
+                    "- Nike Dri-FIT technology",
+                    "- High-stretch, quick-drying fabric",
+                    "- 100% recycled polyester",
+                    "- Color: Blue and scarlet."
+                ]
+            },
+            {
+                "title": "Suggestions",
+                "text": [
+                    "Access and update your documents."
+                ]
+            },
+            {
+                "title": "Shipment",
+                "text": [
+                    "The delivery timeframe for personalized products is 7 to 14 days.",
+                    "This product cannot be exchanged or returned."
+                ]
+            }
+        ],
+        "images": [
+            "src/assets/images/25100C_1.webp",
+            "src/assets/images/25100C_2.webp",
+            "src/assets/images/25100C_3.webp",
+            "src/assets/images/25100C_4.webp",
+            "src/assets/images/25100C_5.webp"
+        ]
     }
 ]
