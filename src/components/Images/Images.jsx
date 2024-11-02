@@ -1,5 +1,3 @@
-// import { AspectRatio } from '@radix-ui/themes'
-// import './Images.css'
 
 export const Images = () => {
 
@@ -10,8 +8,9 @@ export const Images = () => {
                 style={{
                     objectFit: "cover",
                     objectPosition: "top",
-                    padding: "1rem 0",
                     aspectRatio: "3/4",
+                    width: "100%",
+                    height: "100%"
                 }}
             />
     )

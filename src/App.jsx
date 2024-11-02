@@ -13,7 +13,9 @@ function App() {
       <div className='app'>
         <Header />
         <main className='main'>
-          <Images />
+          <div className='slider'>
+            <Images />
+          </div>
           <Description />
         </main>
       </div>
