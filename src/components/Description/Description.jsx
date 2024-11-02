@@ -6,6 +6,7 @@ import { ProductSize } from '../Product/ProductSize'
 import { ProductChoose } from '../Product/ProductChoose'
 import { ProductTabs } from '../Product/ProductTabs'
 import { ProductPrice } from '../Product/ProductPrice'
+import { ProductBuy } from '../Product/ProductBuy'
 
 export const Description = ({data}) => {
 
@@ -17,12 +18,7 @@ export const Description = ({data}) => {
             <ProductTabs data={data}/>
             <Flex gap="1" gapX='9'>
                 <ProductPrice data={data} />
-                <Flex align="center" gap='4'>
-                    <IconButton variant="ghost" radius='full' color='gray'>
-                        <Heart />
-                    </IconButton>
-                    <Button color='ruby' size='4' radius='none'><ShoppingCart />Add to cart</Button>
-                </Flex>
+                <ProductBuy />
             </Flex>
         </div>
     )
