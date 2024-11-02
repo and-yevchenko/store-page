@@ -3,6 +3,7 @@ import './Description.css'
 import { Heart, ShoppingCart } from 'lucide-react'
 import { ProductName } from '../Product/ProductName'
 import { ProductSize } from '../Product/ProductSize'
+import { ProductChoose } from '../Product/ProductChoose'
 
 export const Description = ({data}) => {
 
@@ -10,19 +11,8 @@ export const Description = ({data}) => {
         <div className='description'>
             <ProductName data={data}/>
             <ProductSize data={data}/>
-
-            <Box as='div'>
-                <Flex direction='column' gap="1" align="start">
-                    <Text as='label' weight="medium" style={{color: 'var(--color-main)'}}>Choose player</Text>
-                    <Select.Root size="3" defaultValue='choose'>
-                        <Select.Trigger color='gray' />
-                        <Select.Content color='gray'>
-                            <Select.Item value='choose'>Choose player</Select.Item>
-                            <Select.Item value='19'>Lamine Yamal 19</Select.Item>
-                        </Select.Content>
-                    </Select.Root>
-                </Flex>
-            </Box>
+            <ProductChoose data={data}/>
+           
 
             <Box>
                 <Tabs.Root defaultValue='suggestions'>
