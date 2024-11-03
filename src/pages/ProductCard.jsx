@@ -1,8 +1,8 @@
 import './ProductCard.css';
-import { Images } from './../components/Images/Images';
 import { Description } from './../components/Description/Description';
 import { useEffect, useState } from 'react';
 import { Flex, Spinner, Text } from '@radix-ui/themes';
+import { Slider } from '../components/Slider/Slider';
 
 export const ProductCard = () => {
     const [data, setData] = useState([]);
@@ -72,9 +72,7 @@ export const ProductCard = () => {
 
     return (
         <section className="product-card">
-            <div className="slider">
-                <Images />
-            </div>
+            <Slider data={data[0].images} />
             <Description data={data[0]} />
         </section>
     );
