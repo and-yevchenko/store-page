@@ -1,18 +1,15 @@
-import { useEffect, useRef, useState} from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Image } from '../Image/Image';
 import './Slider.css';
 
 export const Slider = ({ data }) => {
-
     const touchStartX = useRef(0);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const startInterval = () => {
             return setInterval(() => {
-                setCurrentIndex((prevIndex) => 
-                    (prevIndex + 1) % data.length
-                );
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             }, 5000);
         };
         let interval = startInterval();
@@ -31,7 +28,7 @@ export const Slider = ({ data }) => {
             clearInterval(interval);
             slider.removeEventListener('mouseover', handleMouseOver);
             slider.removeEventListener('mouseout', handleMouseOut);
-        }
+        };
     }, [data.length]);
 
     useEffect(() => {
@@ -39,12 +36,10 @@ export const Slider = ({ data }) => {
 
         const handleWheel = (e) => {
             if (e.deltaY > 0) {
-                setCurrentIndex((prevIndex) =>
-                    (prevIndex + 1) % data.length
-                );
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             } else {
-                setCurrentIndex((prevIndex) =>
-                    (prevIndex - 1 + data.length) % data.length
+                setCurrentIndex(
+                    (prevIndex) => (prevIndex - 1 + data.length) % data.length,
                 );
             }
         };
@@ -68,12 +63,10 @@ export const Slider = ({ data }) => {
             const touchDifference = touchStartX.current - touchEndX;
 
             if (touchDifference > 50) {
-                setCurrentIndex((prevIndex) => 
-                    (prevIndex + 1) % data.length
-                );
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             } else if (touchDifference < -50) {
-                setCurrentIndex((prevIndex) => 
-                    (prevIndex - 1 + data.length) % data.length
+                setCurrentIndex(
+                    (prevIndex) => (prevIndex - 1 + data.length) % data.length,
                 );
             }
         };
@@ -90,12 +83,17 @@ export const Slider = ({ data }) => {
     return (
         <div className="slider">
             {data.map((link, index) => (
-                <Image key={index} link={link} index={index} currentIndex={currentIndex}/>
+                <Image
+                    key={index}
+                    link={link}
+                    index={index}
+                    currentIndex={currentIndex}
+                />
             ))}
             <div className="slider-indicator">
                 {data.map((_, index) => (
                     <button
-                        type='button'
+                        type="button"
                         key={index}
                         className={`slider-btn${index === currentIndex ? ' _active' : ''}`}
                         onClick={() => setCurrentIndex(index)}
@@ -103,5 +101,5 @@ export const Slider = ({ data }) => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
