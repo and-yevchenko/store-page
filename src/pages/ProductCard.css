@@ -5,22 +5,27 @@
     display: flex;
     justify-content: start;
     gap: 3rem;
-    &::before,
-    &::after {
-        content: '';
-        display: block;
-        z-index: 5;
-        width: 100%;
-        height: 3px;
-        background-color: var(--color-main);
-        position: absolute;
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 0.3s ease-in;
+    &._show {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.3s ease-in;
     }
-    &::before {
-        top: 0;
-        left: 0;
-    }
-    &::after {
-        bottom: 0;
-        left: 0;
+}
+
+.decor-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-main);
+    transform: scale(0, 1);
+    transition: transform 0.8s ease-in;
+    transform-origin: left top;
+    &._show {
+        transform: scale(1, 1);
+        transition: transform 0.8s ease-in;
+        transform-origin: left top;
     }
 }

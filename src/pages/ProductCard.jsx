@@ -8,6 +8,13 @@ export const ProductCard = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [showAnimation, setShowAnimation] = useState(false);
+
+    useEffect(() => {
+        if (!loading) {
+            setShowAnimation(true);
+        }
+    }, [loading]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -71,9 +78,13 @@ export const ProductCard = () => {
         );
 
     return (
-        <section className="product-card">
-            <Slider data={data[0].images} />
-            <Description data={data[0]} />
-        </section>
+        <>
+            <div className={`${'decor-line'} ${showAnimation ? '_show' : ''}`}></div>
+            <section className={`${'product-card'} ${showAnimation ? '_show' : ''}`}>
+                <Slider data={data[0].images} />
+                <Description data={data[0]} />
+            </section>
+            <div className={`${'decor-line'} ${showAnimation ? '_show' : ''}`}></div>
+        </>
     );
 };
