@@ -1,18 +1,22 @@
 import { Box, Flex, RadioCards, Text } from '@radix-ui/themes';
+import { ProductSizeTable } from './ProductSizeTable';
 
 export const ProductSize = ({ data }) => {
     const { size } = data;
 
     return (
         <Box as="div" width="fit-content">
-            <Flex direction="column" gap="1" align="start">
-                <Text
-                    as="label"
-                    weight="medium"
-                    style={{ color: 'var(--color-main)' }}
-                >
-                    Size
-                </Text>
+            <Flex direction="column" gap="2" align="start">
+                <Flex align="center" justify="between" width="100%">
+                    <Text
+                        as="label"
+                        weight="medium"
+                        style={{ color: 'var(--color-main)' }}
+                    >
+                        Size
+                    </Text>
+                    <ProductSizeTable />
+                </Flex>
                 <RadioCards.Root
                     columns="7"
                     color="gray"
@@ -21,6 +25,7 @@ export const ProductSize = ({ data }) => {
                 >
                     {Object.entries(size).map((sz, index) => (
                         <RadioCards.Item
+                            title={!sz[1] ? 'Out of stock' : undefined}
                             key={sz[0]}
                             value={index}
                             disabled={!sz[1] ? true : undefined}
