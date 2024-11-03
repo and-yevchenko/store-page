@@ -27,9 +27,7 @@ export const ProductSizeTable = () => {
                 <Table.Root size="1" variant="surface">
                     <Table.Header>
                         <Table.Row>
-                            <Table.ColumnHeaderCell>
-                                Size
-                            </Table.ColumnHeaderCell>
+                            <Table.ColumnHeaderCell>Size</Table.ColumnHeaderCell>
                             <Table.ColumnHeaderCell>XS</Table.ColumnHeaderCell>
                             <Table.ColumnHeaderCell>S</Table.ColumnHeaderCell>
                             <Table.ColumnHeaderCell>M</Table.ColumnHeaderCell>

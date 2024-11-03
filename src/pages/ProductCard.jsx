@@ -45,11 +45,7 @@ export const ProductCard = () => {
                 gap="4"
             >
                 <Spinner size="3"></Spinner>
-                <Text
-                    size="8"
-                    weight="medium"
-                    style={{ color: 'var(--color-main)' }}
-                >
+                <Text size="8" weight="medium" style={{ color: 'var(--color-main)' }}>
                     Loading
                 </Text>
             </Flex>
@@ -64,11 +60,7 @@ export const ProductCard = () => {
                 justify="center"
                 gap="4"
             >
-                <Text
-                    size="9"
-                    weight="medium"
-                    style={{ color: 'var(--color-main)' }}
-                >
+                <Text size="9" weight="medium" style={{ color: 'var(--color-main)' }}>
                     404
                 </Text>
                 <Text size="6" weight="medium" color="ruby">

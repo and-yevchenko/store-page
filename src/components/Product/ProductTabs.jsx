@@ -17,11 +17,7 @@ export const ProductTabs = ({ data }) => {
                         </Tabs.Trigger>
                     ))}
                 </Tabs.List>
-                <ScrollArea
-                    type="auto"
-                    scrollbars="vertical"
-                    style={{ height: 120 }}
-                >
+                <ScrollArea type="auto" scrollbars="vertical" style={{ height: 120 }}>
                     <Box pt="3">
                         {info.map((content, index) => (
                             <Tabs.Content key={index} value={content.title}>

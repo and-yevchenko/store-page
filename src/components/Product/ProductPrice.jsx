@@ -12,10 +12,7 @@ export const ProductPrice = ({ data }) => {
                 Selling price:
             </Text>
             <Text as="div" size="6" style={{ color: 'var(--color-main)' }}>
-                USD{' '}
-                <Strong>
-                    {plusPriсeChoose > 0 ? price + choosePrice : price}$
-                </Strong>
+                USD <Strong>{plusPriсeChoose > 0 ? price + choosePrice : price}$</Strong>
             </Text>
         </Box>
     );

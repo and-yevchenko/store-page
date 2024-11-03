@@ -38,9 +38,7 @@ export const Slider = ({ data }) => {
             if (e.deltaY > 0) {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             } else {
-                setCurrentIndex(
-                    (prevIndex) => (prevIndex - 1 + data.length) % data.length,
-                );
+                setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
             }
         };
 
@@ -65,9 +63,7 @@ export const Slider = ({ data }) => {
             if (touchDifference > 50) {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
             } else if (touchDifference < -50) {
-                setCurrentIndex(
-                    (prevIndex) => (prevIndex - 1 + data.length) % data.length,
-                );
+                setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
             }
         };
 
@@ -83,12 +79,7 @@ export const Slider = ({ data }) => {
     return (
         <div className="slider">
             {data.map((link, index) => (
-                <Image
-                    key={index}
-                    link={link}
-                    index={index}
-                    currentIndex={currentIndex}
-                />
+                <Image key={index} link={link} index={index} currentIndex={currentIndex} />
             ))}
             <div className="slider-indicator">
                 {data.map((_, index) => (

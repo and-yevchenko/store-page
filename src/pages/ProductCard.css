@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     justify-content: start;
-    /* gap: 3rem; */
     gap: clamp(1.5rem, 3.75vw, 3rem);
     opacity: 0;
     transform: translateX(-20%);

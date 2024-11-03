@@ -4,7 +4,7 @@
     "jsxSingleQuote": false,
     "bracketSpacing": true,
     "tabWidth": 4,
-    "printWidth": 80,
+    "printWidth": 100,
     "arrowParens": "always",
     "endOfLine": "lf"
 }

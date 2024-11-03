@@ -8,21 +8,12 @@ export const ProductSize = ({ data }) => {
         <Box as="div" width="fit-content">
             <Flex direction="column" gap="2" align="start">
                 <Flex align="center" justify="between" width="100%">
-                    <Text
-                        as="label"
-                        weight="medium"
-                        style={{ color: 'var(--color-main)' }}
-                    >
+                    <Text as="label" weight="medium" style={{ color: 'var(--color-main)' }}>
                         Size
                     </Text>
                     <ProductSizeTable />
                 </Flex>
-                <RadioCards.Root
-                    columns="7"
-                    color="gray"
-                    size="1"
-                    defaultValue={0}
-                >
+                <RadioCards.Root columns="7" color="gray" size="1" defaultValue={0}>
                     {Object.entries(size).map((sz, index) => (
                         <RadioCards.Item
                             title={!sz[1] ? 'Out of stock' : undefined}

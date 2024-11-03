@@ -10,22 +10,14 @@ export const ProductChoose = ({ data }) => {
         <Box as="div">
             <Flex direction="column" gap="1" align="start">
                 <Flex direction="raw" gap="6" justify="center">
-                    <Text
-                        as="label"
-                        weight="medium"
-                        style={{ color: 'var(--color-main)' }}
-                    >
+                    <Text as="label" weight="medium" style={{ color: 'var(--color-main)' }}>
                         Choose player
                     </Text>
                     <Text as="div" weight="bold" color="ruby">
                         +{choosePrice}$ USD
                     </Text>
                 </Flex>
-                <Select.Root
-                    size="3"
-                    defaultValue={0}
-                    onValueChange={(e) => setPlusPriсeChoose(e)}
-                >
+                <Select.Root size="3" defaultValue={0} onValueChange={(e) => setPlusPriсeChoose(e)}>
                     <Select.Trigger color="gray" />
                     <Select.Content color="gray">
                         <Select.Item value={0}>Choose player</Select.Item>

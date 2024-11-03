@@ -14,7 +14,7 @@ export const Description = ({ data }) => {
             <ProductSize data={data} />
             <ProductChoose data={data} />
             <ProductTabs data={data} />
-            <Flex gap="1" gapX="9" gapY="4" wrap='wrap'>
+            <Flex gap="1" gapX="9" gapY="4" wrap="wrap">
                 <ProductPrice data={data} />
                 <ProductBuy />
             </Flex>

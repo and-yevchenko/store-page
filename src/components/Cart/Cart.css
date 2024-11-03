@@ -14,6 +14,9 @@
             color: var(--color-background);
         }
     }
+    @media screen and (max-width: 800px) {
+        transform: translateX(-3.2rem);
+    }
 }
 
 .cart-icon {
