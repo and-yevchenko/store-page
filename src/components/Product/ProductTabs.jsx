@@ -4,7 +4,7 @@ export const ProductTabs = ({ data }) => {
     const { info } = data;
 
     return (
-        <Box width="60%">
+        <Box>
             <Tabs.Root defaultValue={info[0].title}>
                 <Tabs.List color="gray">
                     {info.map((trigger, index) => (

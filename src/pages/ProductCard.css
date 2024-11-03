@@ -4,7 +4,8 @@
     position: relative;
     display: flex;
     justify-content: start;
-    gap: 3rem;
+    /* gap: 3rem; */
+    gap: clamp(1.5rem, 3.75vw, 3rem);
     opacity: 0;
     transform: translateX(-20%);
     transition: all 0.3s ease-in;
@@ -12,6 +13,9 @@
         opacity: 1;
         transform: translateX(0);
         transition: all 0.3s ease-in;
+    }
+    @media screen and (max-width: 970px) {
+        flex-direction: column;
     }
 }
 

@@ -4,6 +4,15 @@
     height: 100%;
     overflow: hidden;
     aspect-ratio: 3/4;
+    @media screen and (max-width: 970px) {
+        width: auto;
+        max-height: 80vh;
+        margin: 0;
+    }
+    @media screen and (max-width: 560px) {
+        width: auto;
+        margin: 0;
+    }
     img {
         padding: 1rem 0 2rem 0;
         position: absolute;

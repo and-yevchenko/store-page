@@ -4,7 +4,7 @@ export const Image = ({ link, index, currentIndex }) => {
             src={link}
             alt="Football kit"
             style={{
-                objectFit: 'cover',
+                objectFit: 'contain',
                 objectPosition: 'top',
                 aspectRatio: '3/4',
                 width: '100%',

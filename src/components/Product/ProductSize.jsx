@@ -36,7 +36,7 @@ export const ProductSize = ({ data }) => {
                             <Text
                                 as="span"
                                 weight="medium"
-                                size="3"
+                                size="2"
                                 style={{ color: 'var(--color-main)' }}
                             >
                                 {sz[0]}
