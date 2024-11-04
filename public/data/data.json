@@ -61,11 +61,11 @@
             }
         ],
         "images": [
-            "src/assets/images/25100C_1.webp",
-            "src/assets/images/25100C_2.webp",
-            "src/assets/images/25100C_3.webp",
-            "src/assets/images/25100C_4.webp",
-            "src/assets/images/25100C_5.webp"
+            "../src/assets/images/25100C_1.webp",
+            "../src/assets/images/25100C_2.webp",
+            "../src/assets/images/25100C_3.webp",
+            "../src/assets/images/25100C_4.webp",
+            "../src/assets/images/25100C_5.webp"
         ]
     }
 ]
