@@ -7,8 +7,11 @@
 
 .main {
     width: 100%;
+    max-width: 1440px;
     height: 100vh;
-    padding: 7rem 0 2rem 0;
+    max-height: 1080px;
+    padding: 7rem 2rem 2rem 2rem;
+    margin: 0 auto;
     @media screen and (max-width: 970px) {
         height: auto;
     }
